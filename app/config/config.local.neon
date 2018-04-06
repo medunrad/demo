@@ -1,0 +1,13 @@
+parameters:
+        production: false
+
+        database:
+                host: docker_db_1
+                dbname: medy
+                user: user
+                password: test
+                port: 3306
+                zone: '+2:00'
+                options:
+                        lazy: yes
+
