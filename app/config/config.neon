@@ -20,6 +20,10 @@ services:
 	- App\Components\ListProducts\IListProductsFactory
 	- App\Components\NewService\INewServiceFactory
 	- App\Components\ListServices\IListServicesFactory
+	- App\Model\Reservation\ReservationFacade
+	- App\Model\Reservation\ServiceReservation
+	- App\Model\Reservation\ProductReservation
+	- App\Components\ReserveProduct\IReserveProductFactory
 	router: App\Router\RouterFactory::createRouter
 
 

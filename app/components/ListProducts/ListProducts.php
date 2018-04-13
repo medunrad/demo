@@ -21,8 +21,4 @@ class ListProducts extends Control {
         $this->template->render();
     }
     
-    public function createComponentListProducts() : void {
-        
-    }
-    
 }

@@ -22,9 +22,4 @@ class ListServices extends Control {
         $this->template->render();
     }
     
-    public function createComponentListServices() : void {
-        
-    }
-    
-    
 }
