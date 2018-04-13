@@ -19,6 +19,10 @@ class ReserveProduct extends Control {
     /** @var ProductRepository */
     private $productRepository;
     
+    /**
+     * @param ReservationFacade $reservationFacade
+     * @param ProductRepository $productRepository
+     */
     public function __construct(ReservationFacade $reservationFacade, ProductRepository $productRepository) {
         parent::__construct();
         $this->reservationFacade = $reservationFacade;
@@ -39,6 +43,10 @@ class ReserveProduct extends Control {
         return $form;
     }
     
+    /**
+     * @param Form $form
+     * @param ArrayHash $values
+     */
     public function success(Form $form, ArrayHash $values) : void {
         $product = $this->productRepository->getById($values->product);
         $reservation = new Reservation;

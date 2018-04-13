@@ -11,6 +11,9 @@ class ListServices extends Control {
     /** @var ServiceRepository */
     private $serviceRepository;
     
+    /**
+     * @param ServiceRepository $serviceRepository
+     */
     public function __construct(ServiceRepository $serviceRepository) {
         parent::__construct();
         $this->serviceRepository = $serviceRepository;

@@ -14,6 +14,9 @@ class NewProduct extends Control {
     /** @var ProductRepository */
     private $productRepository;
     
+    /**
+     * @param ProductRepository $productRepository
+     */
     public function __construct(ProductRepository $productRepository) {
         parent::__construct();
         $this->productRepository = $productRepository;
@@ -33,6 +36,10 @@ class NewProduct extends Control {
         return $form;
     }
     
+    /**
+     * @param Form $form
+     * @param ArrayHash $values
+     */
     public function success(Form $form, ArrayHash $values) : void {
         $product = new Product;
         $product->name = $values->name;

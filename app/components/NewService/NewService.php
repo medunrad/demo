@@ -13,6 +13,9 @@ class NewService extends Control {
     /** @var ServiceRepository */
     private $serviceRepository;
     
+    /**
+     * @param ServiceRepository $serviceRepository
+     */
     public function __construct(ServiceRepository $serviceRepository) {
         parent::__construct();
         $this->serviceRepository = $serviceRepository;
@@ -36,6 +39,10 @@ class NewService extends Control {
         return $form;
     }
     
+    /**
+     * @param Form $form
+     * @param ArrayHash $values
+     */
     public function success(Form $form, ArrayHash $values) : void {
         $service = new Service;
         $service->name = $values->name;

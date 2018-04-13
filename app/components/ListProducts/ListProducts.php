@@ -10,6 +10,9 @@ class ListProducts extends Control {
     
     private $productRepository;
     
+    /**
+     * @param ProductRepository $productRepository
+     */
     public function __construct(ProductRepository $productRepository) {
         parent::__construct();
         $this->productRepository = $productRepository;

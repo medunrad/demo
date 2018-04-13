@@ -11,6 +11,9 @@ class ListReservations extends Control {
     /** @var ReservationRepository */
     private $reservationRepository;
     
+    /**
+     * @param ReservationRepository $reservationRepository
+     */
     public function __construct(ReservationRepository $reservationRepository) {
         parent::__construct();
         $this->reservationRepository = $reservationRepository;
@@ -19,7 +22,7 @@ class ListReservations extends Control {
     
     public function render() : void {
         $this->template->setFile(__DIR__ . '/ListReservations.latte');
-        $this->template->reservations = $this->reservationRepository->findAll();
+        $this->template->reservations = $reservation = $this->reservationRepository->findAll();
         $this->template->render();
     }
     
