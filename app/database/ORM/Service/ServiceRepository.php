@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Database\ORM\Service;
-
 
 use Nextras\Orm\Repository\Repository;
 

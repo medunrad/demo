@@ -24,6 +24,8 @@ services:
 	- App\Model\Reservation\ServiceReservation
 	- App\Model\Reservation\ProductReservation
 	- App\Components\ReserveProduct\IReserveProductFactory
+	- App\Components\ListReservations\IListReservationsFactory
+	- App\Components\ReserveService\IReserveServiceFactory
 	router: App\Router\RouterFactory::createRouter
 
 

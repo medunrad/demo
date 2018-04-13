@@ -17,8 +17,12 @@ class ReservationFacade {
         $this->productReservation = $productReservation;
     }
     
-    public function createProductReservation(Reservation $product) : int {
-        return $this->productReservation->createReservation($product);
+    public function createProductReservation(Reservation $reservation) : int {
+        return $this->productReservation->createReservation($reservation);
+    }
+    
+    public function createServiceReservation(Reservation $reservation) : int {
+        return $this->serviceReservation->createReservation($reservation);
     }
     
 }
