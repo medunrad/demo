@@ -1,58 +1,39 @@
-Nette Sandbox
+Demo project
 =============
 
-This is a simple pre-packaged and pre-configured application using the [Nette](https://nette.org)
-that you can use as the starting point for your new applications.
+This is demo project with some sample code. Project is running on apache with PHP 7.2 in Docker.
 
-[Nette](https://nette.org) is a popular tool for PHP web development.
-It is designed to be the most usable and friendliest as possible. It focuses
-on security and performance and is definitely one of the safest PHP frameworks.
+Project also uses third party plugins like Nextras/ORM or phpstan.
+
+About
+------------
+
+Project aims to show approaches of structuring code in nette framework.
+
+There is big effort for clean code and strict typing.
+
+No fronted is implemented.
 
 
 Installation
 ------------
 
-The best way to install Web Project is using Composer. If you don't have Composer yet,
-download it following [the instructions](https://doc.nette.org/composer). Then use command:
+The best way for launch this project is using Docker. First of all, you need to build an docker image in docker folder:
 
-	composer create-project nette/sandbox path/to/install
-	cd path/to/install
+	docker-compose build
 
+Then, you need start image by:
 
-Make directories `temp/` and `log/` writable.
-
-
-Web Server Setup
-----------------
-
-The simplest way to get started is to start the built-in PHP server in the root directory of your project:
-
-	php -S localhost:8000 -t www
-
-Then visit `http://localhost:8000` in your browser to see the welcome page.
-
-For Apache or Nginx, setup a virtual host to point to the `www/` directory of the project and you
-should be ready to go.
-
-It is CRITICAL that whole `app/`, `log/` and `temp/` directories are not accessible directly
-via a web browser. See [security warning](https://nette.org/security-warning).
+	docker-compose up
 
 
-Requirements
+Code anlysis
 ------------
 
-PHP 7.1 or higher. To check whether server configuration meets the minimum requirements for
-Nette Framework browse to the directory `/checker` in your project root (i.e. `http://localhost:8000/checker`).
+Project includes phpstan tool, which can make great static code analysis.
+
+Phpstan could be used by:
+	
+	composer run-script phpstan
 
 
-Adminer
--------
-
-[Adminer](https://www.adminer.org/) is full-featured database management tool written in PHP and it is part of this Sandbox.
-To use it, browse to the subdirectory `/adminer` in your project root (i.e. `http://localhost:8000/adminer`).
-
-
-License
--------
-- Nette: New BSD License or GPL 2.0 or 3.0
-- Adminer: Apache License 2.0 or GPL 2
