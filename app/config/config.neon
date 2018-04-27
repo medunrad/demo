@@ -33,6 +33,7 @@ extensions:
 	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	orm: Nextras\Orm\Bridges\NetteDI\OrmExtension
 	nextras.form: Nextras\Forms\Bridges\NetteDI\FormsExtension
+	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
 
 dbal:
 	driver: %database.driver%
@@ -46,3 +47,8 @@ dbal:
 
 orm:
 	model: App\Model\Database\ORM\EntityModel
+
+migrations:
+	dir: %appDir%/../migrations # migrations base directory
+	driver: mysql               # pgsql or mysql
+	dbal: nextras               # nextras, nette, doctrine or dibi

@@ -21,6 +21,7 @@ return array(
     'PHPStan\\PhpDocParser\\' => array($vendorDir . '/phpstan/phpdoc-parser/src'),
     'PHPStan\\' => array($vendorDir . '/phpstan/phpstan/src', $vendorDir . '/phpstan/phpstan/build/PHPStan', $vendorDir . '/phpstan/phpstan-nette/src'),
     'Nextras\\Orm\\' => array($vendorDir . '/nextras/orm/src'),
+    'Nextras\\Migrations\\' => array($vendorDir . '/nextras/migrations/src'),
     'Nextras\\Forms\\' => array($vendorDir . '/nextras/forms/src'),
     'Nextras\\Dbal\\' => array($vendorDir . '/nextras/dbal/src'),
     'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),

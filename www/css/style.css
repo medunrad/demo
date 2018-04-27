@@ -14,3 +14,12 @@ a[href^="#error:"] {
 form .required label {
 	font-weight: bold;
 }
+
+nav {
+    margin-bottom: 3em; 
+}
+
+.radek {
+    font-size: 450%;
+    margin-bottom: 2em;
+}

@@ -36,6 +36,7 @@ final class Versions
   'nette/utils' => 'v2.5.x-dev@8c97213a9d6e2b2fafd3f6fbc45c32d14452256d',
   'nextras/dbal' => 'dev-master@697ecd4712dff184c8812e51f10243867e4f5ef4',
   'nextras/forms' => 'dev-master@31fe17e69634d7affef785c7066645c51d4e0af6',
+  'nextras/migrations' => 'dev-master@f0ce88860ed223ec29da6a19796fcc7807cad1fe',
   'nextras/orm' => 'dev-master@7d0dbcfc48d8128fb582a02eae5d5c694de05468',
   'nikic/php-parser' => '3.x-dev@bb87e28e7d7b8d9a7fda231d37457c9210faf6ce',
   'ocramius/package-versions' => '1.3.0@4489d5002c49d55576fa0ba786f42dbb009be46f',
@@ -55,7 +56,7 @@ final class Versions
   'ublaboo/datagrid' => 'dev-master@1fd40108dead3af7024f0bb58de85f5334e1bc70',
   'ublaboo/responses' => 'v1.0.x-dev@b152c2ee836c315cf1878a7d092551244680ce42',
   'nette/tester' => 'dev-master@00d2ea184af95a17aafedcc3468ea274350af53d',
-  'nette/sandbox' => 'dev-master@5eb2a5fa36f691ceb1de4d23351441c6e579890c',
+  'nette/sandbox' => 'dev-master@483a633d67b11941e0b5a44a785ab69c7bdf18ff',
 );
 
     private function __construct()

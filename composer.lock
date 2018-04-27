@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f82f7519460169b77d9568f708b940ca",
+    "content-hash": "819d1a0e7322ac4edf0592f56d598faf",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -1532,6 +1532,71 @@
             "time": "2018-03-18T21:18:12+00:00"
         },
         {
+            "name": "nextras/migrations",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nextras/migrations.git",
+                "reference": "f0ce88860ed223ec29da6a19796fcc7807cad1fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nextras/migrations/zipball/f0ce88860ed223ec29da6a19796fcc7807cad1fe",
+                "reference": "f0ce88860ed223ec29da6a19796fcc7807cad1fe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "dibi/dibi": "~3.0",
+                "dibi/dibi-legacy-2.x": "~2.3",
+                "doctrine/cache": "~1.5",
+                "doctrine/dbal": "~2.5",
+                "doctrine/orm": "~2.5",
+                "ext-openssl": "*",
+                "mockery/mockery": "~0.9",
+                "nette/database": "~2.2",
+                "nette/di": "~2.3.12 | ~2.4",
+                "nette/tester": "~1.4",
+                "nette/utils": "~2.3",
+                "nextras/dbal": "~1.0 | ~2.0",
+                "symfony/config": "~2.6 | ~3.0",
+                "symfony/console": "~2.6 | ~3.0",
+                "symfony/dependency-injection": "~2.6 | ~3.0",
+                "symfony/http-kernel": "~2.6 | ~3.0"
+            },
+            "suggest": {
+                "dibi/dibi": "to use DibiAdapter",
+                "doctrine/dbal": "to use DoctrineAdapter",
+                "doctrine/orm": "to generate migrations with Doctrine SchemaTool",
+                "nette/database": "to use NetteAdapter",
+                "nextras/dbal": "to use NextrasAdapter",
+                "symfony/console": "to use Symfony commands"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nextras\\Migrations\\": "src/"
+                },
+                "classmap": [
+                    "src/exceptions.php",
+                    "src/deprecated"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Database migrations runner",
+            "time": "2018-01-25T10:11:16+00:00"
+        },
+        {
             "name": "nextras/orm",
             "version": "dev-master",
             "source": {
@@ -2609,6 +2674,7 @@
         "nextras/orm": 20,
         "ublaboo/datagrid": 20,
         "nextras/forms": 20,
+        "nextras/migrations": 20,
         "nette/tester": 20
     },
     "prefer-stable": false,

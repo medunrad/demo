@@ -35,7 +35,8 @@
 		"phpstan/phpstan-nette": "^0.10.0@dev",
 		"nextras/orm": "^3.0@dev",
 		"ublaboo/datagrid": "dev-master",
-		"nextras/forms": "^2.0@dev"
+		"nextras/forms": "^2.0@dev",
+		"Nextras/Migrations": "^3.1@dev"
 	},
   	"minimum-stability": "dev",
 	"config": {

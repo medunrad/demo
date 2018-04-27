@@ -43,6 +43,7 @@ class ComposerStaticInitb7d1e816bd6cc9c4792e939fdc045d37
         'N' => 
         array (
             'Nextras\\Orm\\' => 12,
+            'Nextras\\Migrations\\' => 19,
             'Nextras\\Forms\\' => 14,
             'Nextras\\Dbal\\' => 13,
         ),
@@ -118,6 +119,10 @@ class ComposerStaticInitb7d1e816bd6cc9c4792e939fdc045d37
         'Nextras\\Orm\\' => 
         array (
             0 => __DIR__ . '/..' . '/nextras/orm/src',
+        ),
+        'Nextras\\Migrations\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/nextras/migrations/src',
         ),
         'Nextras\\Forms\\' => 
         array (
@@ -479,6 +484,17 @@ class ComposerStaticInitb7d1e816bd6cc9c4792e939fdc045d37
         'Nextras\\Dbal\\NotSupportedException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
         'Nextras\\Dbal\\QueryException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
         'Nextras\\Dbal\\UniqueConstraintViolationException' => __DIR__ . '/..' . '/nextras/dbal/src/exceptions.php',
+        'Nextras\\Migrations\\Drivers\\MySqlNetteDbDriver' => __DIR__ . '/..' . '/nextras/migrations/src/deprecated/MySqlNetteDbDriver.php',
+        'Nextras\\Migrations\\Drivers\\PgSqlNetteDbDriver' => __DIR__ . '/..' . '/nextras/migrations/src/deprecated/PgSqlNetteDbDriver.php',
+        'Nextras\\Migrations\\Exception' => __DIR__ . '/..' . '/nextras/migrations/src/exceptions.php',
+        'Nextras\\Migrations\\ExecutionException' => __DIR__ . '/..' . '/nextras/migrations/src/exceptions.php',
+        'Nextras\\Migrations\\Extensions\\DbPhp' => __DIR__ . '/..' . '/nextras/migrations/src/deprecated/DbPhp.php',
+        'Nextras\\Migrations\\Extensions\\NetteDbSql' => __DIR__ . '/..' . '/nextras/migrations/src/deprecated/NetteDbSql.php',
+        'Nextras\\Migrations\\Extensions\\SimplePhp' => __DIR__ . '/..' . '/nextras/migrations/src/deprecated/SimplePhp.php',
+        'Nextras\\Migrations\\IOException' => __DIR__ . '/..' . '/nextras/migrations/src/exceptions.php',
+        'Nextras\\Migrations\\LockException' => __DIR__ . '/..' . '/nextras/migrations/src/exceptions.php',
+        'Nextras\\Migrations\\LogicException' => __DIR__ . '/..' . '/nextras/migrations/src/exceptions.php',
+        'Nextras\\Migrations\\RuntimeException' => __DIR__ . '/..' . '/nextras/migrations/src/exceptions.php',
         'Nextras\\Orm\\IOException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
         'Nextras\\Orm\\InvalidArgumentException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
         'Nextras\\Orm\\InvalidModifierDefinitionException' => __DIR__ . '/..' . '/nextras/orm/src/exceptions.php',
