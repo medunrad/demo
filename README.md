@@ -3,7 +3,15 @@ Demo project
 
 This is demo project with some sample code. Project is running on apache with PHP 7.2 in Docker.
 
-Project also uses third party plugins like Nextras/ORM or phpstan.
+Project also uses third party plugins like Nextras/ORM, Nextras/Forms, ublaboo/datagrid or phpstan.
+
+Nextras/ORM provide object related mapping from database.
+
+Nextras/Froms add some cool features to nette/forms like dateTimePickers etc.
+
+Ublaboo/Datagrid provide really nice datagrid for rendering data with minimal effort.
+
+Phpstan makes static code checking. It guards clean code.
 
 About
 ------------
@@ -11,9 +19,6 @@ About
 Project aims to show approaches of structuring code in nette framework.
 
 There is big effort for clean code and strict typing.
-
-No fronted is implemented.
-
 
 Installation
 ------------
