@@ -28,6 +28,7 @@ class NewService extends Control {
     
     public function createComponentNewService() : Form {
         $form = new Form;
+        $form->onRender[] = '\App\Model\MakeBootstrap\MakeBootstrap::makeBootstrap';
         $form->addText('name', 'Name of service:')
                 ->setRequired('Please, fill the service name');
         $form->addText('duration', 'Duration of service:')

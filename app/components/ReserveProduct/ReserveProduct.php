@@ -36,6 +36,7 @@ class ReserveProduct extends Control {
     
     public function createComponentReserveProduct() : Form {
         $form = new Form;
+        $form->onRender[] = '\App\Model\MakeBootstrap\MakeBootstrap::makeBootstrap';
         $form->addSelect('product', 'Product:', $this->productRepository->findAll()->fetchPairs('id', 'name'))
                 ->setRequired('Choose product');
         $form->addSubmit('confirm', 'Confirm');

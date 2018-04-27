@@ -32,6 +32,7 @@ services:
 extensions:
 	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
 	orm: Nextras\Orm\Bridges\NetteDI\OrmExtension
+	nextras.form: Nextras\Forms\Bridges\NetteDI\FormsExtension
 
 dbal:
 	driver: %database.driver%

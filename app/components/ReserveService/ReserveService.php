@@ -31,11 +31,12 @@ class ReserveService extends Control {
     
     public function createComponentReserveService() : Form {
         $form = new Form;
+        $form->onRender[] = '\App\Model\MakeBootstrap\MakeBootstrap::makeBootstrap';
         $form->addSelect('service', 'service:', $this->serviceRepository->findAll()->fetchPairs('id', 'name'))
                 ->setRequired('Choose service');
-        $form->addText('date', 'date:')
+        $form->addDateTimePicker('date', 'date:')
                 ->setRequired('Fill date');
-        $form->addSubmit('confirm', 'Confirm:');
+        $form->addSubmit('confirm', 'Confirm');
         $form->onSuccess[] = [$this, 'success'];
         return $form;
     }

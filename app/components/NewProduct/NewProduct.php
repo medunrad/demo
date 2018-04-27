@@ -29,6 +29,7 @@ class NewProduct extends Control {
     
     public function createComponentNewProduct() : Form {
         $form = new Form;
+        $form->onRender[] = '\App\Model\MakeBootstrap\MakeBootstrap::makeBootstrap';
         $form->addText('name', 'Name of product:')
                 ->setRequired('Please, fill the product name');
         $form->addSubmit('save', 'Save');

@@ -35,9 +35,11 @@ final class Versions
   'nette/tokenizer' => 'v2.3.0@88373e9f79007245af0ccd8132fde117421723b2',
   'nette/utils' => 'v2.5.x-dev@8c97213a9d6e2b2fafd3f6fbc45c32d14452256d',
   'nextras/dbal' => 'dev-master@697ecd4712dff184c8812e51f10243867e4f5ef4',
+  'nextras/forms' => 'dev-master@31fe17e69634d7affef785c7066645c51d4e0af6',
   'nextras/orm' => 'dev-master@7d0dbcfc48d8128fb582a02eae5d5c694de05468',
   'nikic/php-parser' => '3.x-dev@bb87e28e7d7b8d9a7fda231d37457c9210faf6ce',
   'ocramius/package-versions' => '1.3.0@4489d5002c49d55576fa0ba786f42dbb009be46f',
+  'paragonie/random_compat' => 'v2.0.12@258c89a6b97de7dfaf5b8c7607d0478e236b04fb',
   'phpstan/phpdoc-parser' => 'dev-master@7ab7c78f55a82d3705eb3f0b04c06f7c47fc4d65',
   'phpstan/phpstan' => 'dev-master@86036c1892c7b6340f88bdd0363b2911176c86fb',
   'phpstan/phpstan-nette' => 'dev-master@c673da23cf28f8e5cdd15a99704ecbfcf9af46d8',
@@ -45,10 +47,15 @@ final class Versions
   'symfony/console' => '3.4.x-dev@d4bb70fa24d540c309d88a9d6e43fb2d339b1fbf',
   'symfony/debug' => '3.4.x-dev@9cf7c2271cfb89ef9727db1b740ca77be57bf9d7',
   'symfony/finder' => '3.4.x-dev@bd14efe8b1fabc4de82bf50dce62f05f9a102433',
+  'symfony/inflector' => '3.4.x-dev@217fa0f0e8fce417bd225e4195b12c56e87273a8',
   'symfony/polyfill-mbstring' => 'dev-master@78be803ce01e55d3491c1397cf1c64beb9c1b63b',
+  'symfony/polyfill-php70' => 'dev-master@77454693d8f10dd23bb24955cffd2d82db1007a6',
+  'symfony/property-access' => '3.4.x-dev@a6e8c778b220dfd5cd5f5dcb09f87ee232dd608a',
   'tracy/tracy' => 'dev-master@51fdf8aa5e765dec99fa72646f1cc51834fc95ea',
+  'ublaboo/datagrid' => 'dev-master@1fd40108dead3af7024f0bb58de85f5334e1bc70',
+  'ublaboo/responses' => 'v1.0.x-dev@b152c2ee836c315cf1878a7d092551244680ce42',
   'nette/tester' => 'dev-master@00d2ea184af95a17aafedcc3468ea274350af53d',
-  'nette/sandbox' => 'No version set (parsed as 1.0.0)@',
+  'nette/sandbox' => 'dev-master@5eb2a5fa36f691ceb1de4d23351441c6e579890c',
 );
 
     private function __construct()

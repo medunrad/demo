@@ -33,7 +33,9 @@
 		"tracy/tracy": "^2.4",
 		"dg/adminer-custom": "^1.8",
 		"phpstan/phpstan-nette": "^0.10.0@dev",
-		"nextras/orm": "^3.0@dev"
+		"nextras/orm": "^3.0@dev",
+		"ublaboo/datagrid": "dev-master",
+		"nextras/forms": "^2.0@dev"
 	},
   	"minimum-stability": "dev",
 	"config": {
