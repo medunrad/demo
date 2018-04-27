@@ -3,15 +3,17 @@ Demo project
 
 This is demo project with some sample code. Project is running on apache with PHP 7.2 in Docker.
 
-Project also uses third party plugins like Nextras/ORM, Nextras/Forms, ublaboo/datagrid or phpstan.
+Project also uses third party plugins like Nextras/ORM, Nextras/Forms, Nextras/Migrations, ublaboo/datagrid or phpstan.
 
 Nextras/ORM provide object related mapping from database.
 
-Nextras/Froms add some cool features to nette/forms like dateTimePickers etc.
+Nextras/Forms add some cool features to nette/forms like dateTimePickers etc.
+
+Nextras/Migrations manage database migrations.
 
 Ublaboo/Datagrid provide really nice datagrid for rendering data with minimal effort.
 
-Phpstan makes static code checking. It guards clean code.
+Phpstan make static code checking. It guards clean code.
 
 About
 ------------
@@ -31,6 +33,7 @@ Then, you need start image by:
 
 	docker-compose up
 
+At the end, database should be initialized. This is task for Nextras/Migrations. In browser go to `.../migrations/run.php` and follow stated steps.
 
 Code anlysis
 ------------
